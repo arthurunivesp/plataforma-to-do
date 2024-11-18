@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block body_class %}home{% endblock %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+<section id="todo">
+    <h1>O TO-DO</h1>
+    <div class="text-container">
+        <p>O TO-DO é uma plataforma Web inovadora desenvolvida para otimizar o ensino de programação para crianças, adolescentes e iniciantes que querem muito aprender programação. O TO-DO tem como missão enfrentar os desafios como engajamento dos alunos, escolha de metodologias adequadas e qualificação de professores. O TO-DO oferece uma solução personalizada. Com um banco de dados robusto e funcionalidades próprias como cadastro simplificado e relatórios personalizados, a plataforma facilita a gestão das informações dos usuários e melhora a experiência de aprendizagem, promovendo maior desempenho e assimilação do conteúdo.</p>
+    </div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/1ar.png') }}" class="image-1" alt="Imagem 1">
+        <img src="{{ url_for('static', filename='images/6gi.png') }}" class="image-2" alt="Imagem 2">
+        <img src="{{ url_for('static', filename='images/4re.png') }}" class="image-3" alt="Imagem 3">
+    </div>
+</section>
+<section id="metodologia">
+    <h1>METODOLOGIA</h1>
+    <div class="text-container">
+        <p>O aprendizado ativo, em que o aluno explora e constrói o conhecimento por meio de suas próprias ações, é essencial para o desenvolvimento crítico e criativo. A nossa plataforma adere à metodologia prática, buscando auxiliar o aluno a obter mais independência no aprendizado, sem ficar restrito a manuais detalhados que muitas vezes desestimulam o aprendizado em jovens.
+        <br><br>
+        O software que apresentamos possui funções amigáveis e interativas, facilitando o uso até mesmo para aqueles que não têm muita familiaridade com equipamentos eletrônicos. Essa característica é ideal, pois elimina a necessidade de complexos treinamentos para funcionários, tornando a experiência de aprendizado mais acessível e eficaz.</p>
+    </div>
+    <div class="quote-background">
+        <p>No ambiente Logo, a criança, mesmo em idade pré-escolar, está no controle – a criança programa o computador. E, ao ensinar o computador a “pensar”, a criança embarca em uma exploração sobre a maneira como ela própria pensa. O foco dos estudos de Piaget foi o “sujeito epistêmico”, ou seja, o estudo dos processos de pensamento presentes no indivíduo desde a infância até a idade adulta. Pensar sobre modos de pensar faz a criança tornar-se um epistemólogo, uma experiência que poucos adultos tiveram. (PAPERT, 1986:25)</p>
+    </div>
+    <div class="metodologia-image">
+        <img src="{{ url_for('static', filename='images/papert.png') }}" alt="Imagem Papert">
+    </div>
+    <div class="turtle-logo">
+        <img src="{{ url_for('static', filename='images/turtle_logo.jpg') }}" alt="Logo Turtle">
+    </div>
+</section>
+<section id="trilhas">
+    <h1>TRILHAS</h1>
+    <h2>Aventura Divertida nas Trilhas do TO-DO</h2>
+    <p>
+        <span>Prepare-se para uma aventura incrível nas trilhas do TO-DO, onde cada passo é uma descoberta e cada trilha é um mundo cheio de surpresas!</span> 
+        <span>Aqui, a programação se transforma em uma jornada mágica com nossas amigas tartarugas.</span>
+        <br><br>
+        <span>Imagine você e as nossas tartarugas, e um vasto território de conhecimento para explorar desde os conceitos básicos até as técnicas mais avançadas da programação,</span>
+        <span>cada trilha é uma peça essencial para desvendar os mistérios do universo digital.</span>
+        <br><br>
+        <span>Então, está pronto para embarcar nessa jornada com nossas tartarugas?</span>
+        <span>Cada trilha é uma nova oportunidade de aprender, criar e, é claro, se divertir muito!</span>
+        <span>Junte-se à comunidade TO-DO e transforme o jeito de aprender programação em uma experiência inesquecível.</span>
+        <span>Vem com a gente e descubra o quanto a programação pode ser incrível!</span>
+    </p>
+    <div class="trilhas-container">
+        <div class="trilha-card trilha-pensamento-computacional">
+            <h2>Pensamento Computacional</h2>
+            <p>Nesta trilha, os alunos aprendem a pensar como programadores! Exploramos a ideia de dividir problemas complexos em partes menores e mais gerenciáveis. As atividades envolvem criar sequências lógicas e resolver puzzles que desenvolvem habilidades de lógica e raciocínio. Começamos com conceitos básicos como loops e condições, e progredimos para projetos que incentivam a criatividade na resolução de problemas.</p>
+        </div>
+        <div class="trilha-card trilha-poo">
+            <h2>Programação Orientada a Objetos (POO)</h2>
+            <p>Nesta trilha, os alunos são introduzidos ao mundo da programação orientada a objetos! Através de exemplos práticos e interativos, aprendem conceitos como classes, objetos, herança e polimorfismo. Criamos pequenos projetos, como jogos simples e aplicativos, que mostram como reutilizar código de maneira eficiente e criar estruturas mais organizadas e fáceis de manter.</p>
+        </div>
+        <div class="trilha-card trilha-frontend">
+            <h2>Programação em Front-End</h2>
+            <p>Aqui, os alunos descobrem como criar lindas páginas web! Começamos com HTML e CSS, construindo elementos básicos como parágrafos, imagens e botões. Em seguida, introduzimos JavaScript para adicionar interatividade. Projetos como a criação de um site pessoal ou um jogo simples ajudam os alunos a aplicar o que aprenderam e a explorar sua criatividade no design e desenvolvimento web.</p>
+        </div>
+        <div class="trilha-card trilha-backend">
+            <h2>Programação em Back-End</h2>
+            <p>Nesta trilha, os alunos mergulham no lado servidor da web! Aprendem sobre bases de dados, APIs e como construir a lógica do servidor que alimenta um site ou aplicativo. Utilizamos linguagens como Python e frameworks simples para construir aplicações que podem armazenar e recuperar informações, tornando a experiência web rica e dinâmica. Projetos incluem a criação de APIs simples e aplicativos de gestão de tarefas.</p>
+        </div>
+        <div class="trilha-card trilha-faca-diferente">
+            <h2>Faça Diferente</h2>
+            <p>Esta trilha é um convite à inovação! Aqui, os alunos são incentivados a pensar fora da caixa e criar projetos únicos que desafiem a norma. Exploramos técnicas avançadas e diferentes abordagens para resolver problemas comuns. Alunos que demonstram criatividade e inovação podem criar jogos únicos, ferramentas de software ou até mesmo invenções tecnológicas! O objetivo é aprender fazendo e experimentando novas ideias.</p>
+        </div>
+        <button class="trilha-alert">Próxima Trilha</button>
+    </div>
+</section>
+
+    <section id="projetos">
+        <h1>PROJETOS</h1>
+        <p>Na plataforma TO-DO, os alunos têm a chance de brilhar como verdadeiros mestres da programação! Aqui, você pode explorar a criatividade e colocar em prática tudo o que aprendeu nas trilhas de conhecimento. Imagine criar jogos incríveis, aplicativos úteis e sites impressionantes que vão deixar todos de boca aberta!
+            A grande novidade é que, quanto mais você desenvolve coisas novas e inovadoras, mais pontos você acumula na nossa plataforma. Cada projeto concluído com sucesso, cada ideia fora da caixa e cada linha de código que você escreve te leva a um novo nível.
+            <br><br>
+            Os projetos serão exibidos aqui, para que todos possam ver o talento dos nossos alunos. Você verá desde o trabalho dos alunos nos primeiros passos na programação até criações avançadas que mostram o verdadeiro potencial de cada um. Então, coloque as mãos na massa, deixe sua imaginação correr solta e alcance o topo com os seus projetos!
+            <br><br>
+            Junte-se a nós nessa jornada, mostre seu talento e veja seu nome brilhar no hall da fama do TO-DO!
+        </p>
+        <div class="carousel-container">
+            <button class="carousel-button left">&lt;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel-images">
+                    <img src="{{ url_for('static', filename='images/projeto1.jfif') }}" alt="Projeto 1">
+                    <img src="{{ url_for('static', filename='images/projeto2.jfif') }}" alt="Projeto 2">
+                    <img src="{{ url_for('static', filename='images/projeto3.jfif') }}" alt="Projeto 3">                    
+                    <img src="{{ url_for('static', filename='images/projeto4.jfif') }}" alt="Projeto 4">
+                    <img src="{{ url_for('static', filename='images/projeto5.jfif') }}" alt="Projeto 5">
+                    <img src="{{ url_for('static', filename='images/projeto6.jfif') }}" alt="Projeto 6">
+            </div>
+        </div>
+        <button class="carousel-button right">&gt;</button>
+    </div>
+</section>
+{% endblock %}
+
+
+

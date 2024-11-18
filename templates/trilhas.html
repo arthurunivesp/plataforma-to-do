@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/trilha_ct.css') }}">
+    <title>Trilhas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            <!-- Removido o link para Home -->
+        </nav>
+    </header>
+    <main>
+        <h1>Nossas Trilhas</h1>
+        
+        <!-- Área de Avatar e Nome -->
+        <aside id="user-profile">
+            <div class="avatar-container">
+                <img src="{{ url_for('static', filename='images/default-avatar.png') }}" alt="Avatar" class="avatar">
+                <input type="file" id="avatar-upload" accept="image/*">
+            </div>
+            <div class="name-container">
+                <label for="username">Nome:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome">
+                <button id="save-profile" class="btn">Salvar</button>
+            </div>
+        </aside>
+        
+        <!-- Módulo 1 - Pensamento Computacional -->
+        <section id="modulo1">
+            <h2>Módulo 1 - Pensamento Computacional</h2>
+            <div class="module-description">
+                <p>
+                    Neste módulo, vamos mergulhar no mundo do pensamento computacional através de um projeto empolgante: a criação de uma aplicação de temperatura. O pensamento computacional é uma abordagem fundamental que envolve a resolução de problemas de forma lógica e estruturada. Utilizando essa metodologia, você aprenderá a decompor problemas complexos, reconhecer padrões, abstrair informações relevantes e criar algoritmos eficientes. Esses conceitos são essenciais não apenas na programação, mas também em diversos aspectos da vida cotidiana.
+                </p>
+                <p>
+                    Durante este módulo, você será guiado por etapas práticas para construir uma aplicação que utiliza uma API de dados de temperatura. Exploraremos diferentes métodos para tornar a aplicação mais criativa e interativa, como personalizar a interface, adicionar funcionalidades extras e otimizar o código. Ao final, você terá uma compreensão sólida de como o pensamento computacional pode ser aplicado para desenvolver soluções inovadoras e eficientes.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Cursos -->
+        <section id="cursos">
+            <div class="curso" id="curso1">
+                <div class="header intermediate"></div>
+                <h3>APP-TEMPERATURA</h3>
+                <p>Aprenda a usar APIs para obter dados de temperatura e criar aplicações interativas.</p>
+                <ul>
+                    <li>Inclui 8 Cursos</li>
+                    <li>Com Certificado</li>
+                    <li>Intermediário</li>
+                    <li>28 horas</li>
+                </ul>
+            </div>
+            <div class="curso" id="curso2">
+                <div class="header beginner"></div>
+                <h3>RELOGIO BINARIO</h3>
+                <p>Construa um relógio binário e aprenda os conceitos de sistemas numéricos binários.</p>
+                <ul>
+                    <li>Inclui 6 Cursos</li>
+                    <li>Com Certificado</li>
+                    <li>Iniciante</li>
+                    <li>20 horas</li>
+                </ul>
+            </div>
+            <div class="curso" id="curso3">
+                <div class="header advanced"></div>
+                <h3>TARTARUGA LOGO</h3>
+                <p>Utilize a linguagem Logo para desenhar e resolver problemas de forma criativa.</                <ul>
+                    <li>Inclui 10 Cursos</li>
+                    <li>Com Certificado</li>
+                    <li>Avançado</li>
+                    <li>35 horas</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Plataforma Todo</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/trilha_ct.js') }}"></script>
+</body>
+</html>

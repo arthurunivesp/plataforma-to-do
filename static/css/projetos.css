@@ -1,0 +1,74 @@
+/* Estilo para o título */
+#projetos h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 60px; /* Aumentar a margem superior para afastar de trilhas */
+    color: #333;
+}
+
+/* Estilo para o parágrafo */
+#projetos p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 0 15px;
+    max-width: 800px;
+    color: #666;
+}
+
+/* Contêiner do carrossel */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+/* Botões do carrossel */
+.carousel-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 2;
+}
+
+.carousel-button.left {
+    margin-right: 10px;
+}
+
+.carousel-button.right {
+    margin-left: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #555;
+}
+
+/* Wrapper do carrossel */
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Imagens do carrossel */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste conforme necessário */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

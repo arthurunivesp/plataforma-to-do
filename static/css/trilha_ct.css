@@ -1,0 +1,174 @@
+/* Estilo para o título */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para as seções */
+section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Estilo para a descrição do módulo */
+.module-description {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+}
+
+.module-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+/* Estilo para o logo */
+header .logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para o usuário perfil */
+#user-profile {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 5;
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#user-profile .avatar-container {
+    margin-bottom: 15px;
+}
+
+#user-profile .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#user-profile input[type="file"] {
+    display: none;
+}
+
+#user-profile label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#user-profile input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+/* Estilo para os cursos */
+#cursos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.curso {
+    width: 250px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.curso .header {
+    height: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.curso h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.curso p {
+    font-size: 1em;
+    color: #555;
+}
+
+.curso ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.curso ul li {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Cores dos cursos */
+.intermediate {
+    background-color: #ffcc00;
+}
+
+.beginner {
+    background-color: #4CAF50;
+}
+
+.advanced {
+    background-color: #ff5733;
+}
+
+.curso:hover {
+    transform: translateY(-10px);
+    background-color: #7FFFD4;
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para o botão */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}

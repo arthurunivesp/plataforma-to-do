@@ -1,0 +1,64 @@
+/* Estilo para o título */
+#todo h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contêiner de texto */
+.text-container {
+    max-width: 800px; /* Largura máxima para manter o texto bem alinhado */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    padding: 20px;
+    border: 2px solid #d3d3d3; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco para destacar o texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+/* Estilo para o parágrafo */
+#todo p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    text-align: justify;
+    margin: 0; /* Remove a margem padrão */
+    color: #333; /* Cor do texto */
+}
+
+/* Contêiner de imagens */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ajuste conforme necessário */
+    margin-top: 10px; /* Ajuste para mover mais próximo do parágrafo */
+    padding: 10px; /* Espaçamento interno para a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para cada imagem individualmente */
+.image-container .image-1 {
+    position: absolute;
+    z-index: 1; /* Fica atrás da imagem 5gi.png */
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.image-container .image-2 {
+    position: absolute;
+    z-index: 2; /* Fica à frente das outras imagens */
+    width: 400px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: -5px; /* Ajuste a posição vertical */
+    right: 150px; /* Ajuste a posição horizontal */
+}
+
+.image-container .image-3 {
+    position: absolute;
+    z-index: 0; /* Fica mais ao fundo */
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    top: -6px; /* Ajuste a posição vertical */
+    right: 10px; /* Ajuste a posição horizontal */
+}

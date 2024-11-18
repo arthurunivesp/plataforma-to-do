@@ -1,0 +1,78 @@
+/* Estilo para o título */
+#metodologia h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilo para o parágrafo */
+#metodologia p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 0 15px;
+    max-width: 800px;
+    color: #666;
+}
+
+/* Contêiner de texto */
+.text-container {
+    max-width: 800px; /* Largura máxima para manter o texto bem alinhado */
+    margin: 0 auto 5px; /* Reduzir margem inferior para aproximar a próxima seção */
+    padding: 20px;
+    border: 2px solid #d3d3d3; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco para destacar o texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+/* Contêiner de citação */
+.quote-background {
+    position: relative;
+    max-width: 500px;
+    margin: 20px auto 0; /* Ajusta margem inferior para auto */
+    padding: 20px;
+    background-color: #fff; /* Fundo cinza claro */
+    border: none; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    z-index: 1; /* Fica atrás da imagem */
+    color: #333; /* Cor do texto */
+    text-decoration: none;
+    font-size: 0.7em; /* Diminui o tamanho do texto */
+    left: -250px;
+}
+
+/* Contêiner de imagem */
+.metodologia-image {
+    position: relative; /* Garantir que a imagem fique dentro da seção */
+    margin: -60px auto 0; /* Ajustar a margem superior para sobrepor a citação */
+    max-width: 300px; /* Aumenta o tamanho da imagem */
+    z-index: 2; /* Fica à frente do contêiner de citação */
+    top: 30px; /* Ajustar para reduzir o espaço inferior */
+}
+
+.metodologia-image img {
+    max-width: 100%;
+    height: auto;
+    border: none; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para o logo da tartaruga */
+.turtle-logo {
+    position: relative;
+    margin: 0 auto -20px; /* Reduzir a margem inferior para aproximar a próxima seção */
+    text-align: center;
+    z-index: 0; /* Fica atrás da imagem e da citação */
+    left: 200px;
+    top: -300px;
+}
+
+.turtle-logo img {
+    max-width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border: none; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+}

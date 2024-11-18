@@ -1,0 +1,56 @@
+/* Ajustar o tamanho e espessura do header */
+header {
+    padding: 20px 0;  /* Ajusta o espaçamento interno (padding) */
+    background-color: #f8f9fa;  /* Cor de fundo */
+    border-bottom: 4px solid #000;  /* Adiciona uma borda inferior de 4px para aumentar a espessura */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para o logo */
+.logo {
+    display: inline-block;
+    height: 50px;  /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px;  /* Espaçamento entre o logo e o menu */
+}
+
+/* Ajustar os links do menu */
+.menu {
+    font-size: 20px;  /* Aumenta o tamanho da fonte dos links do menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;  /* Espaçamento entre os itens do menu */
+}
+
+.menu li a {
+    text-decoration: none;  /* Remove sublinhado dos links */
+    color: #000;  /* Cor do texto dos links */
+}
+
+/* Adicionando hover para melhorar a experiência do usuário */
+.menu li a:hover {
+    background-color: #ddd;  /* Cor de fundo quando passar o mouse */
+    color: #000;  /* Cor do texto quando passar o mouse */
+}
+
+/* Estilo para o formulário de login */
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.login-form input {
+    margin-right: 10px;
+}
+
+.register-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
